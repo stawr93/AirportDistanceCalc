@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cb72c18f_002D2c5d_002D4548_002D82e6_002Db513b178a810/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="IataAirportCodeTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::902A3F4D-E4AF-42B3-9D61-5FE95E829A13::.NETCoreApp,Version=v3.1::AirportDistanceCalc.Core.Tests.IataAirportCodeTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e94db373_002Dc196_002D48c0_002Db202_002D48a8a5d27dc9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="IataAirportCodeTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::902A3F4D-E4AF-42B3-9D61-5FE95E829A13::.NETCoreApp,Version=v3.1::AirportDistanceCalc.Core.Tests.IataAirportCodeTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::902A3F4D-E4AF-42B3-9D61-5FE95E829A13::.NETCoreApp,Version=v3.1::AirportDistanceCalc.Core.Tests.AirportDistanceCalculatorTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
