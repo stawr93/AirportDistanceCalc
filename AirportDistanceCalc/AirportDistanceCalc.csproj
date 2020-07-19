@@ -4,5 +4,10 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\AirportDistanceCalc.Core\AirportDistanceCalc.Core.csproj" />
+      <ProjectReference Include="..\AirportDistanceCalc.LocationProvider\AirportDistanceCalc.LocationProvider.csproj" />
+    </ItemGroup>
+
 
 </Project>
