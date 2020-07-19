@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Threading.Tasks;
 using Geolocation;
 
 namespace AirportDistanceCalc.Core
@@ -12,10 +12,10 @@ namespace AirportDistanceCalc.Core
             _airportLocationProvider = airportLocationProvider;
         }
 
-        public double DistanceBetween(IataAirportCode origin, IataAirportCode dest)
+        public async Task<double> DistanceBetween(IataAirportCode origin, IataAirportCode dest)
         {
-            var originLocation = _airportLocationProvider.LocationOf(origin);
-            var destLocation = _airportLocationProvider.LocationOf(dest);
+            var originLocation = await _airportLocationProvider.LocationOf(origin);
+            var destLocation = await _airportLocationProvider.LocationOf(dest);
 
             var distance = GeoCalculator.GetDistance(originLocation, destLocation, distanceUnit:DistanceUnit.Kilometers);
 

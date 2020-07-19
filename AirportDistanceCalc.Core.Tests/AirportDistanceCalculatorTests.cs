@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using Geolocation;
 using Moq;
 using NUnit.Framework;
@@ -18,7 +19,7 @@ namespace AirportDistanceCalc.Core.Tests
         }
 
         [Test]
-        public void Should_CalculateDistance()
+        public async Task Should_CalculateDistance()
         {
             // Arrange
             var orig = new IataAirportCode("ORG");
@@ -26,11 +27,11 @@ namespace AirportDistanceCalc.Core.Tests
             var origCoordinate = new Coordinate(0,0);
             var destCoordinate = new Coordinate(0,1);
 
-            _locationProviderMock.Setup(_ => _.LocationOf(orig)).Returns(origCoordinate);
-            _locationProviderMock.Setup(_ => _.LocationOf(dest)).Returns(destCoordinate);
+            _locationProviderMock.Setup(_ => _.LocationOf(orig)).Returns(Task.FromResult(origCoordinate));
+            _locationProviderMock.Setup(_ => _.LocationOf(dest)).Returns(Task.FromResult(destCoordinate));
 
             // Act
-            var result = _calculator.DistanceBetween(orig, dest);
+            var result = await _calculator.DistanceBetween(orig, dest);
 
             // Assert
             Assert.AreEqual(111.2d, result);
